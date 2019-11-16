@@ -11,3 +11,23 @@ def answer():
     # update mymap
 
     return mymap
+
+
+# Sample problems
+
+# Problem 1
+# Create a method that return a dictionary that has all your family members names.
+
+def Last_Names():
+    mydict = {}
+    names = ["Ishan", "Mom", "Dad"]
+    for i in range(len(names)):
+        mydict[names[i]] = "Pagidipati"
+    return mydict
+
+
+print(Last_Names())
+
+
+# Problem 2
+#
