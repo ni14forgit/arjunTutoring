@@ -37,9 +37,12 @@ print(Last_Names())
 
 def numbers():
     mydict = {}
-#Code to go here
+    #Code to go here
+    for a in range(100):
+        mydict[str(a)] = a
     print(mydict)
     return mydict
+
 
 # Problem 3
 
@@ -48,9 +51,11 @@ def numbers():
 # HINT: len(stringVariable) returns the length of the string
 
 def names():
-    mydict
+    mydict = {}
     namesList = ["Austin","Cary","Jerry","Rahul","Abby"]
-#Code goes here
+    #Code goes here
+    for i in range(len(namesList)):
+        mydict[namesList[i]] = len(namesList[i])
     print(mydict)
     return mydict
 
