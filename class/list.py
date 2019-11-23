@@ -36,3 +36,5 @@ while r:
         r = False
     n += 1
  '''
+
+# WORK ON INDEXING AND SLICING NEXT CLASS
