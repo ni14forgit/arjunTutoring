@@ -42,7 +42,7 @@ def numbers():
         mydict[str(a)] = a
     print(mydict)
     return mydict
-
+numbers()
 
 # Problem 3
 
@@ -58,7 +58,7 @@ def names():
         mydict[namesList[i]] = len(namesList[i])
     print(mydict)
     return mydict
-
+names()
 
 
 
