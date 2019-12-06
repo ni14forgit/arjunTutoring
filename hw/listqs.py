@@ -8,7 +8,7 @@ def forLoop():
         print(elem)
 
 # Answer for forLoop():
-#The output will be "Apples", "Banana", "Lemons", 5, 6, 7 (or something like that).
+#The output will be "Apples", "Banana", "Lemons", 5, 6, 7 
 
 def forLoop2():
     mylist = ["Apples", "Banana", "Lemons", 5, 6, 7]
