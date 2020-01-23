@@ -19,12 +19,17 @@ while userGuess != guess:
     # Look online and try things that you find!
 
     # make newguess
+
     newguess = input()
+    # if arjun is uncommented then the process will have to wait for the 2nd input
+    #arjun = input()
     #
+    # isdigit() checks to see if STRINGS are numbers.
     if newguess.isdigit():
         userGuess = int(newguess)
         if userGuess < 0 or userGuess > 100:
             print("Your number is not in the range, please provide a number in range.")
+            # skips the rest of the code in the loop & goes back for another iteration
             continue
     else:
         print("Please provide an actual number")
