@@ -8,7 +8,7 @@ import random
 # make a random
 guess = random.randint(0, 100)
 # tell the player to guess a random number
-print("I made a number 0,100 : can you guess it?")
+print("I made a number between 0 and 100 : can you guess it?")
 # set the user's guess to something that will never be guess
 userGuess = -1
 
@@ -39,5 +39,3 @@ while userGuess != guess:
         print("Too low")
     else:
         print("Too high")
-
-    #
