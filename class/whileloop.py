@@ -6,3 +6,4 @@ while var < 11:
 
 
 # Build Game with While Loop!
+#Already done in the games section. 
