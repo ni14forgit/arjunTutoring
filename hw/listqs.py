@@ -39,5 +39,23 @@
 #     print(elem)
 #     print('hi')
 
-mylist = [33,44,55,66,77]
-print(mylist[-6])
+# mylist = [33,44,55,66,77]
+# print(mylist[-6])
+
+
+# February 13th, 2020
+
+# Homework Problem 1
+# Given a list of names, print all the names that have an odd number of characters.
+#Ex: mylist = ["nishant", "arjun", "sara", "mark", Rachel, Ola] => prints first two and last two names
+def oddnames(mylist):
+    #fill this function
+    pass 
+
+# Homework Problem 2
+# Given a list, slice it and return the second half of the list (includes middle element if length of list is odd).
+#Ex: mylist = [1,2,3,4,5,6,7] => returns [4,5,6,7]
+def slicelist(mylist):
+    #fill this function
+    pass 
+
