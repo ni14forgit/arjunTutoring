@@ -32,7 +32,7 @@ mydict["Arjun"] = "Duke"
 
 # Line 34: Print out the dictionary at this state
 print(mydict)
-# Output will be {"Arjun:Duke", "Nishant":"Iyengar"}
+# Output will be {"Arjun":"Duke", "Nishant":"Iyengar"}
 
 # Line 38: Add key-value pair "arjun" -> "Duke"
 mydict["arjun"] = "Duke"
