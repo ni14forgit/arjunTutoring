@@ -49,18 +49,20 @@
 # Given a list of names, print all the names that have an odd number of characters.
 #Ex: mylist = ["nishant", "arjun", "sara", "mark", Rachel, Ola] => prints first two and last two names
 def oddnames(mylist):
-    for elem in range(len(mylist)):
-        if len(elem) == 1 or len(elem) == 3 or len(elem) == 5 or len(elem) == 7:
+    for elem in len(range(mylist)):
+        #if len(mylist[elem]) == 1 or len(mylist[elem]) == 3 or len(mylist[elem]) == 5 or len(mylist[elem]) == 7:
+        if len(mylist[elem])%2 == 1:
             print(elem)
-    pass 
+
+   
 
 # Homework Problem 2
 # Given a list, slice it and return the second half of the list (includes middle element if length of list is odd).
 #Ex: mylist = [1,2,3,4,5,6,7] => returns [4,5,6,7]
 def slicelist(mylist):
     len1 = len(mylist)
-    len2 = len1/2 - 1
-    secondhalf = mylist(len2:len1)
+    len2 = len1/2
+    secondhalf = mylist[len2:len1]
     print(secondhalf)
     pass 
 
