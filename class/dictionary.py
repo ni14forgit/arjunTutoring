@@ -36,6 +36,8 @@ print(mydict)
 
 # Line 38: Add key-value pair "arjun" -> "Duke"
 mydict["arjun"] = "Duke"
+# if U uncomment this, it will print "Yale" because it overwrites "Duke"
+#mydict["arjun"] = "Yale"
 
 # Line 41: Print out the dictionary at this state
 print(mydict)
@@ -51,3 +53,5 @@ print(mydict.values())
 
 # Line 53: Create key-value pair 9 -> "Arjun"
 mydict[9] = "Arjun"
+
+print(mydict["arjun"])

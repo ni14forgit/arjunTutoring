@@ -32,3 +32,9 @@ print(myset)
 
 if "Arjun" in myset:
     myset.remove("Arjun")
+
+# Test Question 1:
+# given a list of numbers, tell me how many unique numbers are in the list
+a = [1, 2, 3, 4, 4, 4, 5]
+set1 = set(a)
+print(len(set1))
