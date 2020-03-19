@@ -47,22 +47,36 @@
 
 # Homework Problem 1
 # Given a list of names, print all the names that have an odd number of characters.
-#Ex: mylist = ["nishant", "arjun", "sara", "mark", Rachel, Ola] => prints first two and last two names
-def oddnames(mylist):
-    for elem in len(range(mylist)):
-        #if len(mylist[elem]) == 1 or len(mylist[elem]) == 3 or len(mylist[elem]) == 5 or len(mylist[elem]) == 7:
-        if len(mylist[elem])%2 == 1:
-            print(elem)
+# #Ex: mylist = ["nishant", "arjun", "sara", "mark", Rachel, Ola] => prints first two and last two names
+# def oddnames(mylist):
+#     for elem in len(range(mylist)):
+#         #if len(mylist[elem]) == 1 or len(mylist[elem]) == 3 or len(mylist[elem]) == 5 or len(mylist[elem]) == 7:
+#         if len(mylist[elem])%2 == 1:
+#             print(elem)
 
    
 
-# Homework Problem 2
-# Given a list, slice it and return the second half of the list (includes middle element if length of list is odd).
-#Ex: mylist = [1,2,3,4,5,6,7] => returns [4,5,6,7]
-def slicelist(mylist):
-    len1 = len(mylist)
-    len2 = len1/2
-    secondhalf = mylist[len2:len1]
-    print(secondhalf)
-    pass 
+# # Homework Problem 2
+# # Given a list, slice it and return the second half of the list (includes middle element if length of list is odd).
+# #Ex: mylist = [1,2,3,4,5,6,7] => returns [4,5,6,7]
+# def slicelist(mylist):
+#     len1 = len(mylist)
+#     len2 = len1/2
+#     secondhalf = mylist[len2:len1]
+#     print(secondhalf)
+#     pass 
 
+
+# Given an input list and mod m, return a list of elem % m for every elem in the input.
+def modandappend(input_list, m):
+    print("this is input list: " + str(input_list))
+    print("this is the mod value " + str(m))
+    newlist = []
+    #Code goes here
+    for elem in input_list:
+        newelem = elem % m
+        newlist.append(newelem)
+    print("this is newlist: " + str(newlist))
+    return newlist
+
+modandappend([1,2,3,4,5,6,7,8,9,10], 3)

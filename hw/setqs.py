@@ -17,3 +17,42 @@ def removal():
     return(answer)
 
 # return [True, False, True, False]
+
+
+
+
+  
+
+# Ouput all common names between the two lists 
+# Order of the output does not matter
+# Ex: 
+# List A: ["Annie", "Sam", "Varun", "Calvin", "Neha", "Christina", "Chris"]
+# List B: ["Arjun", "Annie", "Chris", "Nishant", "Rebecca"]
+# Output: ["Annie", "Chris"]
+
+def commonNames(A, B):
+  	
+    # myset = set()
+    # myset.add("nishant")
+    # if "nishant" in myset:
+    #   print("myset contains nishant!")
+    # if "rebecca" not in myset:
+    #   print("myset does not contain rebecca, sad")
+    
+    listToReturn = []
+    myset = set(A)
+    for elem in B:
+        if elem in myset:
+            listToReturn.append(elem)
+        
+    return(listToReturn)
+      
+    # Try to use a set 
+    # Initialize an empty list 
+    pass
+
+
+
+
+
+

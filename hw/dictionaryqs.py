@@ -59,11 +59,30 @@ def names():
         mydict[namesList[i]] = len(namesList[i])
     print(mydict)
     return mydict
-<<<<<<< HEAD
-names()
+
+
+# Problem 4: Given a list of names  with repeats, output the name with the most occurrences. 
+#Ex: 
+#Input: ["Sam", "Jon", "Tom", "Sam", "Sam", "Tom", "Sam", "Tom", "Jon", "Sam", "Sam", "Sam", "Jon", "Jon"]
+#Output: "Sam" because it occurs the most often 
+
+# x = ["Jon", "Jon", "Sam", "Tom"]
+# x = {"Jon":2, "Sam":1, "Tom":3, "Rebecca":10}
 
 
 
-
-=======
->>>>>>> c3891bde479fb0975246b70fb497320603e92179
+def mostCommon(names):
+    dict = {}
+    length = len(names)
+    for elem in names:
+        if elem not in dict:
+            dict[elem] = 1
+        else:
+            dict[elem] += 1
+    greatest = 0
+    nameToReturn = ""
+    for elem in dict:
+        if dict[elem] > greatest:
+            greatest = dict[elem]
+            nameToReturn = elem
+    return(nameToReturn)
