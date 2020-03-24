@@ -39,11 +39,28 @@ def commonNames(A, B):
     # if "rebecca" not in myset:
     #   print("myset does not contain rebecca, sad")
     
+    # Pick a list and convert it to a set 
+    # Iterate over the other list and check to see if the elements in the second list are in the set you just created
+    # Instantiate an empty list 
+    # If so, add those elements to a new (empty) list, and then return the new list
+    
     listToReturn = []
     myset = set(A)
     for elem in B:
         if elem in myset:
             listToReturn.append(elem)
+
+"""    
+ARJUN's very own solution! 
+Def commonnames(A, B):
+            myset = set(A)
+            listtoreturn = []
+            For elem in B:
+		        If elem in myset:
+			        listtoreturn.append(elem)
+"""
+			
+
         
     return(listToReturn)
       

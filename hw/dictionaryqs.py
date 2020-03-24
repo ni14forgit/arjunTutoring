@@ -70,19 +70,28 @@ def names():
 # x = {"Jon":2, "Sam":1, "Tom":3, "Rebecca":10}
 
 
-
 def mostCommon(names):
-    dict = {}
-    length = len(names)
-    for elem in names:
-        if elem not in dict:
-            dict[elem] = 1
-        else:
-            dict[elem] += 1
-    greatest = 0
-    nameToReturn = ""
-    for elem in dict:
-        if dict[elem] > greatest:
-            greatest = dict[elem]
-            nameToReturn = elem
-    return(nameToReturn)
+    # dict = {}
+    # length = len(names)
+    # for elem in names:
+    #     if elem not in dict:
+    #         dict[elem] = 1
+    #     else:
+    #         dict[elem] += 1
+    # greatest = 0
+    # nameToReturn = ""
+    # for elem in dict:
+    #     if dict[elem] > greatest:
+    #         greatest = dict[elem]
+    #         nameToReturn = elem
+    # return(nameToReturn)
+    pass
+def mostCommon_Arjun(listofnames):
+    # Same problem, please try not to refer to the commented solution above 
+
+    # Hints: 
+        # first iterate ove the list of names and build the dictionary
+        # the dictionary should map a name to the number of times it appears in listofnames
+        # second, iterate over the dictionary to decide which name has the largest count
+        # maintain variables to keep track of the greatest count to compare against, and the current name to return if nothing changes 
+    pass
