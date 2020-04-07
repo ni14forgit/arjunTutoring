@@ -87,9 +87,23 @@ def mostCommon(names):
     # return(nameToReturn)
     pass
 def mostCommon_Arjun(listofnames):
-    # Same problem, please try not to refer to the commented solution above 
+    mydict = {}
+    listlength = len(listofnames)
+    for elem in listofnames:
+    if elem not in mydict:
+        mydict[elem] = 1
+        else:
+        dict[elem] += 1
+    thegreatest = 0
+    answer = ""
+    for elem in mydict:
+        if dict[elem] > greatest:
+        greatest = dict[elem]
+        answer = elem
+    return(answer)
+        
 
-    # Hints: 
+    # Hints:
         # first iterate ove the list of names and build the dictionary
         # the dictionary should map a name to the number of times it appears in listofnames
         # second, iterate over the dictionary to decide which name has the largest count
