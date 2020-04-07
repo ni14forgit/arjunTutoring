@@ -62,11 +62,11 @@ Def commonnames(A, B):
 			
 
         
-    return(listToReturn)
+    #return(listToReturn)
       
     # Try to use a set 
     # Initialize an empty list 
-    pass
+    #pass
 
 
 
