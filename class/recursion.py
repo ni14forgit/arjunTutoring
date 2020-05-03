@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # Print out the number and call if
-Def answer(sequence, n):
+def answer(sequence, n):
 
     if n < 1:
         return sequence
@@ -14,7 +14,7 @@ Def answer(sequence, n):
     sequence.add(newelem)
     answer(sequence, n-1)
 =======
-def countDownFrom_N(number):
+def ountDownFrom_N(number):
     # Line 3 is known as the "Base Case"
     if number < 1: 
         return 
