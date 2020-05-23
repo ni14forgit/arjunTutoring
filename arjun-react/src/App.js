@@ -1,27 +1,31 @@
 import React, { useState } from "react";
 import "./App.css";
 import List from "./List";
+
 import basketball from "./basketballreact.png";
+import baseball from "./baseball.png";
+
+import Member from "./Member";
+
+
+
 
 const App = () => {
-  const [toggle, setToggle] = useState(true);
 
-  const printStatement = () => {
-    setToggle("Arjun!");
-    console.log(toggle);
-  };
 
-  return (
-    <div>
-      <div>
-        <h1 style={{ textAlign: "center" }}>Arjun</h1>
-      </div>
-      <List basketball="basketball" football="football" guitar="guitar"></List>
-      <button onClick={() => setToggle(!toggle)}>Toggle</button>
-      {toggle ? <h1>toggle is true</h1> : <h1>toggle is false</h1>}
-      <img src={basketball} width={100} height={100}></img>
-    </div>
-  );
+  const names = ["Arjun", "Dad", "Mom", "Ishan"];
+  const description = ["Arjun likes to play basketball, football and tennis. He thinks school is BORING like most other kids.", "Dad runs Zebpay. He likes cryptocurrency.", "Mom is a doctor. She does the heart.", "Ishan likes math. He also likes science, TED and reading. He's basically a nerd."];
+  
+  const myobj = [{name:"Arjun", description: "Arjun likes basketball"}, {name:"Dad", description:"Dad runs Zebpay"}]
+  return(<div>{myobj.map( detailsobj=> {
+
+    return(
+    <Member name={detailsobj.name} description={detailsobj.description}></Member>
+    )
+    
+
+  })}
+  </div>)
 };
 
 export default App;
