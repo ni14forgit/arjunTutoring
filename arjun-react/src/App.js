@@ -61,7 +61,7 @@ const App = () => {
     const location = data["loc"];
     const [lat, lng] = location.split(",");
     // console.log(lat, lng);
-    console.log(data);
+    // console.log(data);
     const { city, country, ip, postal, region, timezone } = data;
     // console.log(city, country);
     return {
@@ -181,7 +181,7 @@ const App = () => {
 
   return (
     <div className="App" style={{ height: "100%" }}>
-      <NavBar toggle={drawerToggleClickHandler} />
+      <NavBar toggle={drawerToggleClickHandler} object={myobj} />
       <SideDrawer show={sideDrawerOpen} toggle={closeSideDrawer} />
       {backdrop}
       <Switch>
