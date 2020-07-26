@@ -1,0 +1,27 @@
+.root {
+  flex-grow: 1;
+}
+
+.menuButton {
+  margin-right: 3px;
+}
+
+.title {
+  flex-grow: 1;
+}
+
+.toolbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.toolbar__logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.toolbar__navigation {
+  display: flex;
+}

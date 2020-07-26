@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import Button from "@material-ui/core/Button";
 
 const Member = (props) => {
@@ -21,8 +20,9 @@ const Member = (props) => {
         onClick={() => setTrueFalseShowMessage(!showMessage)}
         variant="contained"
         color="primary"
+        style={{ zIndex: "0" }}
       >
-        Click here to {showMessage ? "hide" : "show"} an{" "}
+        Click here to {showMessage ? "hide" : "show"} a{props.nornot}{" "}
         {props.embarrassingorfun} Secret about {props.name}
       </Button>
       {showMessage ? (
